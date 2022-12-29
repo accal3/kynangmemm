@@ -1,0 +1,109 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header, nav{
+    margin: 15px 20%;
+}
+nav{
+    background:rgba(0, 34, 255, 0.945)  ;
+    border-radius: 50px;
+}
+nav ul{
+    display: flex;
+}
+nav> ul li{
+    list-style: none;
+    border-right: 1px solid black;
+    border-left:1px solid #333;
+}
+nav> ul li a{
+    display: block;
+    padding:  20px;
+    line-height: 20px;
+    color: white;
+    text-decoration: none;
+}
+nav ul li:first-child {
+    border-left: none;
+}
+nav> ul li:first-child a{
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+}
+nav ul li:hover>a{
+    background: white;
+    opacity: .7;
+    color: black;
+}
+nav li ul{
+    display: none;
+    min-width: 350px;
+    position: absolute;
+}
+nav li>ul li{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background: #0000FF;
+    text-align: left;
+}
+
+nav li>ul li:first-child a{
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+}
+nav li>ul li:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+nav li>ul li:last-child a{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+nav  li:hover > ul{
+    display:  block;
+}
+nav > ul li > ul li >ul{
+    margin-left: 352px;
+    margin-top: -50px;
+}
+
+input[type="text"] {
+    width: 150px;
+    box-sizing: border-box;
+    border: 10px solid black;
+    border-radius: 50px;
+    outline:none;
+    padding: 12px 14px;
+  }
+input[type="text"]:focus{
+    width:500px; 
+}
+input[type="text"] {
+    width: 150px;
+    box-sizing: border-box;
+    border: 3px solid black;
+    border-radius: 50px;
+    outline:none;
+    padding: 12px 14px;
+
+    transition:1s ease-in-out;
+  }
+  input[type="text"]:focus{
+    width:500px; 
+    background-color:rgba(219, 255, 182, 0.87);
+}
+.husky{
+    position: absolute;
+    bottom: 480px;
+    left: 60%;
+    z-index: 1;
+}
+.husky img{
+    width: 200px;
+    height: 200px; 
+}
+    
+
+
